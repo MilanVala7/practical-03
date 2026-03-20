@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="Abstraction/Abstraction.csproj" />
   <Project Path="Inheritance/Inheritance.csproj" />
+  <Project Path="Polymorphism/Polymorphism.csproj" />
 </Solution>
