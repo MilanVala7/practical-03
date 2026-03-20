@@ -17,12 +17,20 @@ internal class Laptop
         set { model = value; }
     }
 
+    /// <summary>
+    /// Purpose: Displays laptop brand and model details.
+    /// Return Type: void
+    /// </summary>
     public void LaptopDetails()
     {
         Console.WriteLine("Brand: " + Brand);
         Console.WriteLine("Model: " + Model);
     }
 
+    /// <summary>
+    /// Purpose: Displays motherboard information of the laptop.
+    /// Return Type: void
+    /// </summary>
     private void MotherBoardInfo()
     {
         Console.WriteLine("MotherBoard Information");
