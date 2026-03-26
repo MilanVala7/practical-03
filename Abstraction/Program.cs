@@ -11,8 +11,11 @@ internal class Program
         laptop.Brand = "Dell";
         laptop.Model = "XPS 15";
 
+        // displays the laptop details.
         laptop.LaptopDetails();
 
-        laptop.MotherBoardInfo();
+        /// This method can not be called here because it is a private method
+        /// It shows error: inaccessible due to its protection level
+        // laptop.MotherBoardInfo();
     }
 }

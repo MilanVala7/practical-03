@@ -7,6 +7,5 @@ internal class Program
         Team team = new Team();
         Console.WriteLine(team.printInfo());
 
-
     }
 }

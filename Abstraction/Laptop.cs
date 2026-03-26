@@ -2,23 +2,24 @@
 
 internal class Laptop
 {
-    private string brand;
-    private string model;
+
+    private string? brand;
+    private string? model;
 
     public string Brand
     {
-        get { return brand; }
+        get => brand ?? throw new InvalidOperationException("Brand must be assigned a non-null value.");
         set { brand = value; }
     }
 
     public string Model
     {
-        get { return model; }
+        get => model ?? throw new InvalidOperationException("Model must be assigned a non-null value.");
         set { model = value; }
     }
 
     /// <summary>
-    /// Purpose: Displays laptop brand and model details.
+    /// Purpose: Displays laptop's brand and model details.
     /// Return Type: void
     /// </summary>
     public void LaptopDetails()
@@ -28,7 +29,7 @@ internal class Laptop
     }
 
     /// <summary>
-    /// Purpose: Displays motherboard information of the laptop.
+    /// Purpose: Displays motherboard information of the laptop. This is a private method.
     /// Return Type: void
     /// </summary>
     private void MotherBoardInfo()
