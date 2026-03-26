@@ -18,7 +18,8 @@ internal class Duck: Bird
     /// Purpose: Displays duck sound.
     /// Return Type: void
     /// </summary>
-    public void Voice()
+    // Method hiding.
+    public new void Voice()
     {
         Console.WriteLine("Quack Quack");
     }
